@@ -1,0 +1,19 @@
+html, body {
+  background: radial-gradient(circle, rgba(252, 252, 252, 1) 0%, rgba(112, 112, 112, 1) 100%);
+  font-family: consolas;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+canvas {
+  display: block;
+  border: 4px, solid;
+}
+
+button {
+  background: #fff;
+  padding: 10px 20px;
+  margin: 20px;
+}
