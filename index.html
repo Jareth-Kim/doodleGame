@@ -1,20 +1,43 @@
+<!--
+
+imageDetector
+
+Jareth Kim
+
+11/23/2026
+ 
+Any comments/ credits etc....
+
+-->
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
-  <script src="https://unpkg.com/ml5@0.6.0/dist/ml5.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta charset="utf-8" />
-
-</head>
-
-<body>
-  <h1>Draw.</h1>
-  <p>J. Kim. 2026. Using <a href = "https://thecodingtrain.com/tracks/ml5js-beginners-guide/ml5/9-doodleNet/1-doodleNet">Template by Daniel Shiffman</a></p>
+<html>
+  <head>
+    <title>Janell's Detect the Subject in an Image</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.14.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.0"></script>
+    <!-- link to the style sheet -->
+    <link rel = "stylesheet" href = "style.css">
+  </head>
+ 
+  <body>
+    <nav></nav>
+    <main>
+      <h1>what is this thing</h1>
+      <section id="droparea">
+        <div id="dropzone">put an image here and we'll guess what that thing is</div>
+        <input type = "file" id="imageInput" accept="image/*" style="display:none;">
+        
+ 
+      </section>
+      <section id="output">
+	<img id="preview" width="300" style="display:none; margin-top:10px:">
+	<br>
+        <p id="result">Loading model ... </p>
+ 
   
-  <script src="sketch.js"></script>
-</body>
-
+      </section>
+    </main>
+    <script src="script.js"></script>    
+  </body>
 </html>
+ 
